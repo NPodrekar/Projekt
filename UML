@@ -1,0 +1,29 @@
+@startuml
+
+actor "Mobilni uporabnik" as phone
+actor "Administrator" as desktop
+
+
+package Smartphone {
+
+usecase "Nalaganje" as upload
+'secase "Odjemanje" as download
+}
+
+package Desktop {
+usecase "Urejanje" as edit
+usecase "Branje" as read
+usecase "Hranjenje" as base
+}
+
+desktop -> edit
+desktop <- read
+
+phone -> upload
+
+upload ...> base
+
+base <--> edit
+read  <--> edit
+
+@enduml
