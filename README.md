@@ -6,6 +6,8 @@ Cilj tega projekta je ustvariti preprosto dostopno shrambo na domačem strežnik
 ### Zasnova
 #### Main.php
 Naslovna stran, ki omoči uporabniku upravljanje shrambe. Razdeljena je na dva glavna dela
+
+
 ![diagram.png](https://github.com/NPodrekar/Projekt/blob/main/diagram.png)
 
 **1. izbor in nalaganje datotek**
@@ -29,5 +31,4 @@ Apache HTTP strežnik
 #### Ngrok 
 Storitev, ki omogoči vzpostavitev tunela med javnim URL Ngrok strežnikov in localhost. S tem programom se izognemo potrebi po odpiranju portov v domačem omrežju. Glavni slabosti sta omejitev istočasnih povezav in spreminjanje naslova ob vnovičnih zagonih.
 
-# UML diagram
-![UMLPNGv3](https://github.com/NPodrekar/Projekt/assets/147034104/5ec6af92-6b1d-4ff2-97be-c6ef8332d866)
+
