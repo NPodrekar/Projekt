@@ -1,9 +1,9 @@
 <?php
 $fileDirectory = "C:/xampp/htdocs/uploads(projekt)/"; 
 $fileName = $_POST['file'];
-$decryptionKey = $_POST['key'];
+$desKljuc = $_POST['key'];
 
-if (!empty($fileName) && !empty($decryptionKey)) {
+if (!empty($fileName) && !empty($desKljuc)) {
     $fileLocation = $fileDirectory . $fileName;
 
     if (file_exists($fileLocation)) {
@@ -14,7 +14,7 @@ if (!empty($fileName) && !empty($decryptionKey)) {
         $encryptedData = substr($fileContent, openssl_cipher_iv_length('aes-256-cbc'));
 
         // poskusi dešifriranje
-        $decrypted = openssl_decrypt($encryptedData, 'aes-256-cbc', $decryptionKey, 0, $iv);
+        $decrypted = openssl_decrypt($encryptedData, 'aes-256-cbc', $desKljuc, 0, $iv);
 
         if ($decrypted !== false) {
             // pošlje dešifrirane podatke
@@ -32,4 +32,5 @@ if (!empty($fileName) && !empty($decryptionKey)) {
     echo "<h2>???</h2></br></br> <a class='datoteke_text' href='main.php'>Nazaj</a>";
 }
 ?>
+
 
