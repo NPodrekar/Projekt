@@ -7,6 +7,7 @@ Cilj tega projekta je ustvariti preprosto dostopno shrambo na domačem strežnik
 #### Main.php
 Naslovna stran, ki omoči uporabniku upravljanje shrambe. Razdeljena je na dva glavna dela 
 **1. izbor in nalaganje datotek**
+
 **2. pregled naloženih datotek**
 
   
