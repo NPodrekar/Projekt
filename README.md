@@ -8,7 +8,7 @@ Cilj tega projekta je ustvariti preprosto dostopno shrambo na domačem strežnik
 ### Main.php
 Naslovna stran, ki omogoča uporabniku upravljanje shrambe. Razdeljena je na dva glavna dela:
 
-![diagram.png](https://github.com/NPodrekar/Projekt/blob/main/diagram.png)
+![diagram2.png](https://github.com/NPodrekar/Projekt/blob/main/diagram2.png)
 
 - **Izbor in nalaganje datotek**
 
