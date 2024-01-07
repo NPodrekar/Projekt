@@ -12,11 +12,16 @@ Naslovna stran, ki omoči uporabniku upravljanje shrambe. Razdeljena je na dva g
 
 **1. izbor in nalaganje datotek**
 
+Uporabnik lahko s klikom na gumb "Izberi datoteko" odpre shrambo naprave iz katere lahko izbere ENO datoteko, z gumbom "Naloži" pa izbiro potrdi in datoteko pošlje na strežnik s tem je preusmerjen na podstran "Upload.php"
+
+      
 **2. pregled naloženih datotek**
 
+V pregledu datotek so razvrščene povezave do datotek v shrambi strežnika, s klikom na njih, je uporabnik pozvan za vnos prej določenega dešifrirnega ključa v primeru da je pravilen bo preusmerjen na "download.php"
+
   
-  1. Uporabnik lahko s klikom na gumb "Izberi datoteko" odpre shrambo naprave iz katere lahko izbere ENO datoteko, z gumbom "Naloži" pa izbiro potrdi in datoteko pošlje na strežnik s tem je preusmerjen na podstran "Upload.php"
-  2. V pregledu datotek so razvrščene povezave do datotek v shrambi strežnika, s klikom na njih, je uporabnik pozvan za vnos prej določenega dešifrirnega ključa v primeru da je pravilen bo preusmerjen na "download.php"
+ 
+
 
 #### upload.php
 Podstran vsebuje php skript, ki z Advanced Encryption Standard (AES) šifrira datoteko preden jo dejansko shrani na strežnik. Trenutno je ključ za šifriranja shranjen znotraj php kode vendar bi se v prihodnosti tega rad znebil.
