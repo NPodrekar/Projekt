@@ -15,10 +15,10 @@ Naslovna stran, ki omoči uporabniku upravljanje shrambe. Razdeljena je na dva g
   1. Uporabnik lahko s klikom na gumb "Izberi datoteko" odpre shrambo naprave iz katere lahko izbere ENO datoteko, z gumbom "Naloži" pa izbiro potrdi in datoteko pošlje na strežnik s tem je preusmerjen na podstran "Upload.php"
   2. V pregledu datotek so razvrščene povezave do datotek v shrambi strežnika, s klikom na njih, je uporabnik pozvan za vnos prej določenega dešifrirnega ključa v primeru da je pravilen bo preusmerjen na "download.php"
 
-#### Upload.php
+#### upload.php
 Podstran vsebuje php skript, ki z Advanced Encryption Standard (AES) šifrira datoteko preden jo dejansko shrani na strežnik. Trenutno je ključ za šifriranja shranjen znotraj php kode vendar bi se v prihodnosti tega rad znebil.
 
-#### Download.php
+#### download.php
 Podstran prek POST dobi dešifrirni ključ in ime datoteke, ki jo uporabnik želi prenesti. Razlog za uporabo POST je, da se znebimo uporabnikovega ključa in imena datoteke, ki bi bila vidna v URL če bi uporabili GET
 Postopek dešfriranja preveri tudi, če je ključ, ki ga je posredoval uporabnik ustrezen, v primeru da ni javi napako in prenos se ne izvede.
 
