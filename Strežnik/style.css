@@ -1,0 +1,102 @@
+body{
+    background-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e8e8e8;
+}
+.skupni{
+    background-color: #232323;
+    text-align: center;
+    margin:auto;
+    padding-bottom: 20%;
+    padding-top: 10%;
+   
+    
+}
+.kazalo{
+    display: block;
+    background-color: #5e5e5e;
+    width:20%;
+    list-style-type: none;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #e8e8e8;
+    border-radius: 5px;
+
+}
+
+.datoteke{
+    list-style-type: none;
+
+}
+.datoteke_napis{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #e8e8e8;
+}
+
+.naloži{
+    display: block;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+.izberi{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #d82934;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 5px;
+    border-width: 3px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.izberi:hover{
+    background-color: #ff5560;
+}
+
+.upload_gumb{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    background-color: #5e5e5e;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 5px;
+    border-width: 3px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.upload_gumb:hover{
+    background-color: #8b8b8b;
+}
+
+input[type="file"] {
+    display: none;
+    
+}
+input[type="submit"] {
+    display: none;
+}
+
+.datoteke_text{
+    color: #e8e8e8;
+}
+.datoteke_text:hover{
+    color: #d82934;
+}
+
+.upload_skupni{
+    background-color: #232323;
+    text-align: center;
+    margin:auto;
+    padding-bottom: 50%;
+    padding-top: 20%;
+}
