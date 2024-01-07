@@ -22,7 +22,7 @@ Naslovna stran, ki omogoča uporabniku upravljanje shrambe. Razdeljena je na dva
 Podstran vsebuje PHP skripto, ki z Advanced Encryption Standard (AES) šifrira datoteko preden jo shrani na strežnik. Trenutno je ključ za šifriranje shranjen znotraj PHP kode, vendar bi se tega v prihodnosti rad znebil.
 
 ### download.php
-Podstran prek POST dobi dešifrirni ključ in ime datoteke, ki jo uporabnik želi prenesti. Uporaba POST metode se uporablja, da se izogne vidnosti ključa in imena datoteke v URL-ju (GET). Postopek dešifrira tudi preveri ustreznost poslanega ključa. V primeru napake se javi napaka in prenos se ne izvede.
+Podstran prek POST dobi dešifrirni ključ in ime datoteke, ki jo uporabnik želi prenesti. POST metoda se uporablja, da se izogne vidnosti ključa in imena datoteke v URL-ju (GET). Postopek dešifrira tudi preveri ustreznost poslanega ključa. V primeru napake se javi napaka in prenos se ne izvede.
 
 ## Orodja
 
