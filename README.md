@@ -10,13 +10,13 @@ Naslovna stran, ki omogoča uporabniku upravljanje shrambe. Razdeljena je na dva
 
 ![diagram.png](https://github.com/NPodrekar/Projekt/blob/main/diagram.png)
 
-**1. izbor in nalaganje datotek**
+- **1. izbor in nalaganje datotek**
 
-Uporabnik lahko s klikom na gumb "Izberi datoteko" odpre shrambo naprave iz katere lahko izbere ENO datoteko. Z gumbom "Naloži" potrdi izbiro in datoteko pošlje na strežnik, s čimer je preusmerjen na podstran "Upload.php".
+  Uporabnik lahko s klikom na gumb "Izberi datoteko" odpre shrambo naprave iz katere lahko izbere ENO datoteko. Z gumbom "Naloži" potrdi izbiro in datoteko pošlje na strežnik, s čimer je preusmerjen na podstran "Upload.php".
 
-**2. pregled naloženih datotek**
+- **2. pregled naloženih datotek**
 
-V pregledu datotek so razvrščene povezave do datotek v shrambi strežnika. S klikom na njih, je uporabnik pozvan za vnos prej določenega dešifrirnega ključa. V primeru pravilnega ključa bo preusmerjen na "download.php".
+  V pregledu datotek so razvrščene povezave do datotek v shrambi strežnika. S klikom na njih, je uporabnik pozvan za vnos prej določenega dešifrirnega ključa. V primeru pravilnega ključa bo preusmerjen na "download.php".
 
 ### upload.php
 Podstran vsebuje PHP skripto, ki z Advanced Encryption Standard (AES) šifrira datoteko preden jo shrani na strežnik. Trenutno je ključ za šifriranje shranjen znotraj PHP kode, vendar bi se tega v prihodnosti rad znebil.
