@@ -6,6 +6,7 @@ Cilj tega projekta je ustvariti preprosto dostopno shrambo na domačem strežnik
 ### Zasnova
 #### Main.php
 Naslovna stran, ki omoči uporabniku upravljanje shrambe. Razdeljena je na dva glavna dela
+![diagram.png](https://github.com/NPodrekar/Projekt/blob/main/diagram.png)
 
 **1. izbor in nalaganje datotek**
 
