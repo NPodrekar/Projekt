@@ -9,14 +9,15 @@
 <body>
     <div class="upload_skupni">
     <?php
-    $imeDatoteke = $_FILES['file']['name'];
+    include 'C:/Dropboks settings/settings.php';
+    $fileName = $_FILES['file']['name'];
     $temp = $_FILES['file']['tmp_name'];
 
     $naslov = "C:/xampp/htdocs/uploads(projekt)/"; 
-    $cilj = $naslov . $imeDatoteke;
-
+    $cilj = $naslov . $fileName;
+    $ip = getenv('REMOTE_ADDR');
     if (move_uploaded_file($temp, $cilj)) {
-        $kljuc = '2/VR9p8fyhe7fcB6Xlu/pw==';
+        $kljuc = KLJUC;
         $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length('aes-256-cbc'));
         
         //prebere vsebino datoteke
@@ -27,10 +28,15 @@
         
         //shrani šifrirano vsebino nazaj v datoteko
         file_put_contents($cilj, $iv . $encrypted);
+
+        $logs = "OK       $fileName NALOŽEN IZ IP: {$_SERVER['HTTP_X_FORWARDED_FOR']} OB " . date("H:i:s d-m-Y"). "\r\n";
+        error_log($logs, 3, "C:/Dropboks settings/uploadLogs.txt");
         
-        echo "<h2>Nalaganje uspešno</h2></br></br> <a class='datoteke_text' href='main.php'>Nadaljuj</a>";
+        echo "<h2>Nalaganje uspešno</h2></br></br> <a class='datoteke_text' href='main.php'>Nadaljuj </a>";
     } else {
         echo "<h2>Napaka pri nalaganju</h2></br></br> <a class='datoteke_text' href='main.php'>Nadaljuj</a>";
+        $logs = "ERROR ZA $fileName         IZ IP: {$_SERVER['HTTP_X_FORWARDED_FOR']} OB " . date("H:i:s d-m-Y") . "\r\n";
+        error_log($logs, 3, "C:/Dropboks settings/uploadLogs.txt");
     }
     ?>
     </div>
