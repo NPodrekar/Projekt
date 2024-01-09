@@ -37,6 +37,7 @@
         echo "<h2>Napaka pri nalaganju</h2></br></br> <a class='datoteke_text' href='main.php'>Nadaljuj</a>";
         $logs = "ERROR ZA $fileName         IZ IP: {$_SERVER['HTTP_X_FORWARDED_FOR']} OB " . date("H:i:s d-m-Y") . "\r\n";
         error_log($logs, 3, "C:/Dropboks settings/uploadLogs.txt");
+        
     }
     ?>
     </div>
