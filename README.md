@@ -31,3 +31,7 @@ Podstran prek POST dobi dešifrirni ključ in ime datoteke, ki jo uporabnik žel
 
 ### Ngrok 
 - Storitev, ki omogoči vzpostavitev tunela med javnim URL-jem Ngrok strežnikov in localhost. S tem programom se izognemo potrebi po odpiranju portov v domačem omrežju. Glavni slabosti sta omejitev istočasnih povezav in spreminjanje naslova ob vnovičnih zagonih.
+
+## Trenutni link
+https://fcab-176-76-226-221.ngrok-free.app/main.php
+
